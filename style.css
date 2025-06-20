@@ -1,3 +1,4 @@
+/* Umumiy body dizayni */
 body {
   margin: 0;
   padding: 0;
@@ -10,38 +11,50 @@ body {
   height: 100vh;
 }
 
+/* Kontainer markazda va matn o‘rtada */
 .container {
   text-align: center;
 }
 
+/* Sarlavha */
 h1 {
   font-size: 48px;
   margin-bottom: 10px;
 }
 
+/* Oddiy matn */
 p {
   font-size: 20px;
   margin: 15px 0;
 }
 
+/* Coin hisoblagich — qizil rangda */
 #counter {
-  color: red; /* Coinni qizil rangda ko‘rsatish */
+  color: red;
   font-size: 28px;
   font-weight: bold;
 }
 
+/* Dumaloq tugma */
 #tapBtn {
   background-color: #222;
   color: white;
-  font-size: 24px;
-  padding: 20px 60px;
+  font-size: 22px;
+  width: 120px;
+  height: 120px;
   border: none;
-  border-radius: 50px; /* Dumaloq tugma */
+  border-radius: 50%; /* To‘liq dumaloq */
   cursor: pointer;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  transition: background-color 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
 }
 
+/* Hover effekt — bosganda ozgina kichrayadi */
 #tapBtn:hover {
   background-color: #333;
+  transform: scale(0.97);
 }
