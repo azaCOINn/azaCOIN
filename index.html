@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>azaCOIN Tap Game</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    #coin {
+      background-color: gold;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      font-size: 24px;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      cursor: pointer;
+      box-shadow: 0 0 15px yellow;
+    }
+    #score {
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1>azaCOIN 🪙 Tap to Earn</h1>
+  <div id="coin">TAP!</div>
+  <div id="score">Sizning tokeningiz: <span id="count">0</span></div>
+
+  <script>
+    let count = 0;
+    document.getElementById('coin').addEventListener('click', () => {
+      count++;
+      document.getElementById('count').innerText = count;
+    });
+  </script>
+</body>
+</html>
